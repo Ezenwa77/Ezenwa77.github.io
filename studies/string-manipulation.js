@@ -12,3 +12,5 @@ console.log(myNameFirst.toLowerCase); // string method- toLowerCase method. prin
 *the first character of the word searched from the beginning, including spaces 
 *search(), searches a string and returns the position of the match
 */
+
+

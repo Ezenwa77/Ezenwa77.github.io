@@ -1,5 +1,6 @@
 /* Function
-*The two phases to using function: First, we define a function(function definition)
+*The two phases to using function: First, we define a function(function 
+definition)
 */
 function functionName(parameters){ //defines the function add
       // code to be executed
@@ -7,8 +8,9 @@ function functionName(parameters){ //defines the function add
 /*Next, we execuce or call or invoke the function.
 *functionName(); // calls the function functionName
 */
-/*Function parameters are the placeholders for the arguments to be passed to a function.
-* arguments are the actual value passed to a function during function call.
+/*Function parameters are the placeholders for the arguments to be passed to a 
+function. Arguments are the actual value passed to a function during function 
+call.
 */
 /*Syntax for a named function*/
 function add(a, b){ //defines the function add
@@ -23,7 +25,8 @@ const sum1 = add();
     
 console.log(sum1);
 */
-/* Input to a function is specified in parentheses after function name when a function is called.
-*functionName(). Function may take no input as shown.
-*Outputs are returned, and may be printed on the console. There, optionally, are output
+/* Input to a function (argument) is specified in parentheses after function 
+name when a function is called, functionName(). Function may take no input as 
+shown. Outputs are returned, and may be printed on the console. There, optionally, 
+are output
 */

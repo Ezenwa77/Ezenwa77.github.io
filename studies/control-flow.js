@@ -1,8 +1,9 @@
 /* Control Flow
-*control flow may have more than one statement, in which case the statements are executed in the order top-to-bottom. 
-* Control flow may also not be straight. it might have brances, in which case the program takes the proper 
-*branch based on the condition at hand. This is called conditional execution.
- conditional execution may go with if, else-if, else, or switch statement.
+*control flow may have more than one statement, in which case the statements are
+executed in the order top-to-bottom. Control flow may also not be straight. it 
+might have brances, in which case the program takes the proper branch based on 
+the condition at hand. This is called conditional execution. Conditional 
+execution may go with if, else-if, else, or switch statement.
 */
 var x = 8;
 var y = 10;
