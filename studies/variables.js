@@ -1,47 +1,67 @@
 /*
- * VARIABLES:
- *
- * 1 To hold things in memory during the life-cycle of a program, we can use 
- variables.  Variables are named identifiers that can point to values of a 
- particular type, like a Number, String, Boolean, Array, Object or another 
- data-type.  Variables are called so because once created, we can CHANGE the 
- value (and type of value) to which they point.
- *
- * 2. To create a variable we use the keyword, var, followed by a name (id or 
- alias) for our variable.
- *
- * 3. There are 2 phases of using variables: declaration and initialization (or 
- assignment).
- */
+ * VARIABLES
+ Variables are named identifiers that point to the values of the primitive types
+  and to the location/address f the complex datatype. They arecalled variables 
+  because we can change the value and type of value to which they point.
+  
+  
+ var, let and const:
+ - To declare a variable, we use the keyword, var, followed by a 
+ //name (id or alias) for our variable. 
+ 
+ //const and let bindings could also be used to declare variables.
+ var skills = 'Dribbles';
+ let myGame = 'Soccer';
+ const product = 5 * 3;
+ var:
+ - is re-assignable
+ - is hoisted
+ - is scoped to functions
+ - not scoped to if blocks and loop blocks
+ 
+ let:
+ - is re-assignable
+ - not effectively hoisted(actually hoisted but not shown)
+ - is scoped to functions
+ -is scoped to if blocks and loop blocks
+ 
+ const:
+ - is not re-assignable
+ - not effectively hoisted(actually hoisted but not seen)
+ - is scoped to functions
+ - is scoped to if blocks and if blocks
+ 
 
-// 1. declaration //
+1. declaration //
 var myName;
-/*
- * At the declaration phase, the variable myName is undefined because we have 
+
+ At the declaration phase, the variable myName is undefined because we have 
  NOT initialized it to anything
- */
+ 
 console.log(myName); // prints => undefined
 
-// 2. initialization or assignment //
+// 2. INITIALIZATION OR ASSIGNMENT //
 myName = 'john';
 console.log(myName); // prints => john
 
-// 3. re-assignment //
+//  RE-ASSIGNMENT //
 myName = 'bob';
 console.log(myName); // prints => bob
 
-// NOTE: We can assign and re-assign anything to a variables/bindings, (var) and
-//(let). const - we cannot do this with constants //
+//  We can assign and re-assign anything to a variables/bindings, (var) and
+//(let), but we cannot do this with constants (const)//
 var myVariable = 1;
-var myVariable = true;
 myVariable = "someString";
-var myBool = true; // Booleans are true or values
-var myObject = {}; //Objects have curly braces
-var myArray = []; //Arrays have square brackets
-//function definition//
-function myFunction(a, b){
-   return a + b; 
-};
+
+let myGame = 'soccer';
+myGame = 'volleyBall';
+
+//Hoisting: Javascript's default way of moving all declarations to the top of 
+the scope before the statements of a program are executed. This is basically the
+reason var variables willnot throw a reference error if you try referencing them
+before they are declared. Instead, theywill return the value undfined.
+for var declarations, only the declaration, not teh initialization is hoisted to
+the top.
 console.log(myFunction(1, 2)); // invoking the function myFunction, and printing
 //the result, 3 to the console
 var myFriends; // prints undefined
