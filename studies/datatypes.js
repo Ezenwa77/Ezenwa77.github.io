@@ -141,8 +141,12 @@ floating point numbers, which is 1.797693134862315E+308
 point numbers, which is -1.797693134862316E+308
 */
 /*Infinity-based calculations are not to be trusted because 
-infinity -1 = infinity;
 */
+console.log(Infinity - Infinity);// prints NaN
+console.log(Infinity -1);// prints infinity
+console.log(Infinity + Infinity);//prints Infinity
+console.log(2 /0);// prints Infinity
+console.log(100000000 / Infinity);// prints 0
 
 
 /*

@@ -30,7 +30,8 @@ comparison.
 There are also relational comparisons/binary operators - <=, >=, >, and <, which
 first converts the operands to same type(primitives) and then compares them. 
 
-/*Examples of comparison operators;
+/*
+The following are comparison operators;
 //(==, !=, ===, !==, <, >, <=, >=) are comparison operators
  == -> loosely equals
 */
