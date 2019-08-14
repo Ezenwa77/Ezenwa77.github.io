@@ -68,20 +68,29 @@ be read as a loop.
   condition, and index-- is the decremntor.
 */
 //Example: looping forward
-var arr2 = [];
-arr2.push(i);
-for(var i = 0; i < arr2.length; i++){ // looping forward
-    console.log(arr2);
-}
-var arr3 = []; //declaring an arr3 array
-arr3.push(i);
-for(var i = arr3.length-1; i > 0; i--){// looping backward
 
-console.log(arr3);
-}
-var person = {};//declaring a person object
+var arr2 = [2, 4, 6, 8];
 
-for(var key in person){
-    console.log(person[key]);
+// looping forward
+for(var i = 0; i < arr2.length; i++){
+console.log(arr2[i]);
+}
+ 
+
+//Looping backward:
+//declaring an arr3 array
+var arr3 = [1, 3, 5, 7]; 
+//add 9 to the end of the array
+arr3.push(9);
+for(var i = arr3.length-1; i > 0; i--){ // looping backward
+
+console.log(arr3[i]);
+}
+
+//Example on looping over object:
+var games = {sports: 'soccer', vGame: 'PS4'};//declaring a person object
+
+for(var key in games){
+    console.log(games[key]);// getting the values at the keys in the object
 }
 

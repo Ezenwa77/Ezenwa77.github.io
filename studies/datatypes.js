@@ -38,7 +38,7 @@ not by reference.
 
 //Numbers: A numeric data type that could be an integer, floating-point,doubles 
 //or bignums. Example:
-//var x = 3.6;
+var xym = 3.6;
 //String: The text form representation for holding data. Strings are enclosed in
 //quotes.Strings have length property and some methods like string concatenation
 // operations using + or += operators, extractiing substrings using substring 

@@ -1,7 +1,7 @@
 /*
  * VARIABLES
  Variables are named identifiers that point to the values of the primitive types
-  and to the location/address f the complex datatype. They arecalled variables 
+  and to the location/address of the complex datatypes. They are called variables 
   because we can change the value and type of value to which they point.
   
   
@@ -10,34 +10,39 @@
  //name (id or alias) for our variable. 
  
  //const and let bindings could also be used to declare variables.
+ */
+ //Examples for var, let and const declaration and assignment:
  var skills = 'Dribbles';
  let myGame = 'Soccer';
  const product = 5 * 3;
- var:
+ 
+ /*
+ Declarations with var:
  - is re-assignable
  - is hoisted
  - is scoped to functions
  - not scoped to if blocks and loop blocks
  
- let:
+ 
+ Declarations with let:
  - is re-assignable
  - not effectively hoisted(actually hoisted but not shown)
  - is scoped to functions
- -is scoped to if blocks and loop blocks
+ - is scoped to if blocks and loop blocks
  
- const:
+ Declarations with const:
  - is not re-assignable
- - not effectively hoisted(actually hoisted but not seen)
+ - is not effectively hoisted(actually hoisted but not seen)
  - is scoped to functions
  - is scoped to if blocks and if blocks
- 
+ /*
 
 1. declaration //
-var myName;
 
- At the declaration phase, the variable myName is undefined because we have 
- NOT initialized it to anything
- 
+ /*At the declaration phase, the variable myName is undefined because we have 
+ NOT initialized it to anything, shown below:
+ */
+ var myName;
 console.log(myName); // prints => undefined
 
 // 2. INITIALIZATION OR ASSIGNMENT //
@@ -53,17 +58,18 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 myVariable = "someString";
 
-let myGame = 'soccer';
-myGame = 'volleyBall';
+let myGame1 = 'soccer';
+myGame1 = 'volleyBall';
 
-//Hoisting: Javascript's default way of moving all declarations to the top of 
+/*Hoisting: Javascript's default way of moving all declarations to the top of 
 the scope before the statements of a program are executed. This is basically the
 reason var variables willnot throw a reference error if you try referencing them
-before they are declared. Instead, theywill return the value undfined.
-for var declarations, only the declaration, not teh initialization is hoisted to
+before they are declared. Instead, theywill return the value undefined.
+for var declarations, only the declaration, not the initialization is hoisted to
 the top.
-console.log(myFunction(1, 2)); // invoking the function myFunction, and printing
-//the result, 3 to the console
+*/
+
+
 var myFriends; // prints undefined
 null === null; // denotes the absemce of a meaningful value
 console.log(null == undefined); // prints true
