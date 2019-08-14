@@ -4,11 +4,13 @@ and manipiating texts. String manipulation refers the use of avaiable methods to
 work on strings.
 /*
 
-//String Manipulation using operator
-//+ is string concatenation operator
+/*
+String Manipulation using operator
++ is string concatenation operator
+*/
 "Simon" + '' + "Ejim"; //Prints SimonEjim
 
-// String Manipulation using methods
+/*String Manipulation using methods*/
 var myNameFirst = 'Simon';
 console.log(myNameFirst.toUpperCase()); // string method- toUpperCase method. 
 //Prints SIMON
@@ -17,22 +19,30 @@ var myName = 'JOHN';
 console.log(myName.toLowerCase()); // string method- toLowerCase method. 
 //prints john
 
-//toString(): Returns the value of a string object
+/*
+toString(): Returns the value of a string object
+*/
 //Example:
 var string1 = "my beautiful world";
 console.log(string1.toString());// prints my beautiful world
 
-//trim(); Removes white space from both ends of a string
+/*
+trim(); Removes white space from both ends of a string
+*/
 //Example:
 var string1 = '   Hello marksman!   ';
 console.log(string1.trim());// prints Hello marksman
 
-//valueOf(): Returns the primitive value of a string.
+/*
+valueOf(): Returns the primitive value of a string.
+*/
 var string1 = 'Finite element';
 console.log(string1.valueOf());// prints Finite element
 
 
-//includes(): Checks whether a string contains the specified string/character.
+/*
+includes(): Checks whether a string contains the specified string/character.
+*/
 var string1 = 'Bootcamp is getting hotter';
 console.log(string1.includes('is'));// prints true
 
